@@ -1,0 +1,2 @@
+1. flow typed files configuration.
+2. prettier fix in flow typed files.

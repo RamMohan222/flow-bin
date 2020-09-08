@@ -1,0 +1,42 @@
+{
+  "name": "node-flow-bin",
+  "version": "1.0.0",
+  "description": "flow-bin configuration with eslint and prettier",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./build/index.js",
+    "build": "babel src/ -d build/",
+    "prepublish": "npm run build",
+    "flow": "flow",
+    "flow:all": "flow check --all",
+    "flow:init": "npm run flow init",
+    "lint": "eslint ./src/* ./flow-typed/*",
+    "lint:fix": "eslint ./src/* --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamMohan222/node-flow-bin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamMohan222/node-flow-bin/issues"
+  },
+  "homepage": "https://github.com/RamMohan222/node-flow-bin#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-flow": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "flow-bin": "^0.133.0",
+    "prettier": "2.1.1"
+  }
+}
